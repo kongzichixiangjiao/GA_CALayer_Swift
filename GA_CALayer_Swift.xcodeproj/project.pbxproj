@@ -14,6 +14,8 @@
 		DC61DC361CE32B8E0019C2B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC61DC341CE32B8E0019C2B7 /* LaunchScreen.storyboard */; };
 		DC61DC411CE32B8E0019C2B7 /* GA_CALayer_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61DC401CE32B8E0019C2B7 /* GA_CALayer_SwiftTests.swift */; };
 		DC61DC4C1CE32B8E0019C2B7 /* GA_CALayer_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61DC4B1CE32B8E0019C2B7 /* GA_CALayer_SwiftUITests.swift */; };
+		DC61DC5A1CE32E8B0019C2B7 /* imageName.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC61DC591CE32E8B0019C2B7 /* imageName.jpg */; };
+		DC61DC5C1CE335BF0019C2B7 /* GA_StrokeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61DC5B1CE335BF0019C2B7 /* GA_StrokeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DC61DC471CE32B8E0019C2B7 /* GA_CALayer_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GA_CALayer_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC61DC4B1CE32B8E0019C2B7 /* GA_CALayer_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GA_CALayer_SwiftUITests.swift; sourceTree = "<group>"; };
 		DC61DC4D1CE32B8E0019C2B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC61DC591CE32E8B0019C2B7 /* imageName.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imageName.jpg; sourceTree = "<group>"; };
+		DC61DC5B1CE335BF0019C2B7 /* GA_StrokeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GA_StrokeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			children = (
 				DC61DC2B1CE32B8E0019C2B7 /* AppDelegate.swift */,
 				DC61DC2D1CE32B8E0019C2B7 /* ViewController.swift */,
+				DC61DC5B1CE335BF0019C2B7 /* GA_StrokeButton.swift */,
 				DC61DC2F1CE32B8E0019C2B7 /* Main.storyboard */,
+				DC61DC591CE32E8B0019C2B7 /* imageName.jpg */,
 				DC61DC321CE32B8E0019C2B7 /* Assets.xcassets */,
 				DC61DC341CE32B8E0019C2B7 /* LaunchScreen.storyboard */,
 				DC61DC371CE32B8E0019C2B7 /* Info.plist */,
@@ -229,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC61DC5A1CE32E8B0019C2B7 /* imageName.jpg in Resources */,
 				DC61DC361CE32B8E0019C2B7 /* LaunchScreen.storyboard in Resources */,
 				DC61DC331CE32B8E0019C2B7 /* Assets.xcassets in Resources */,
 				DC61DC311CE32B8E0019C2B7 /* Main.storyboard in Resources */,
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC61DC5C1CE335BF0019C2B7 /* GA_StrokeButton.swift in Sources */,
 				DC61DC2E1CE32B8E0019C2B7 /* ViewController.swift in Sources */,
 				DC61DC2C1CE32B8E0019C2B7 /* AppDelegate.swift in Sources */,
 			);
