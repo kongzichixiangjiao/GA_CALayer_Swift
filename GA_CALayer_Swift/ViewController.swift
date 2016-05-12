@@ -25,9 +25,16 @@ class ViewController: UIViewController {
     @IBAction func startAction1(sender: UIButton) {
         
         let v = self.view.viewWithTag(100)
+        /*
+            动画一
+        */
+        //transform.scale.x这个动画和下面动画二 x = 0 执行效果是一样的。
 //        addAnimation(1, toValue: 0.3, keyPath: "transform.scale.x") { (a) -> () in
 //            self.layerV.addAnimation(a, forKey: "x")
 //        }
+        /*
+            动画二
+        */
         let x = v!.frame.size.width / 2 - 13  //差的13像素不知道为什么
         let y: CGFloat = 0
         let w: CGFloat = 30
@@ -36,10 +43,10 @@ class ViewController: UIViewController {
         let morphAnimation = CABasicAnimation(keyPath: "path")
         morphAnimation.duration = duration
         morphAnimation.toValue = UIBezierPath(ovalInRect: morphedFrame).CGPath
+        //Timing Function的会被用于变化起点和终点之间的插值计算.形象点说是Timing Function决定了动画运行的节奏(Pacing),比如是均匀变化(相同时间变化量相同),先快后慢,先慢后快还是先慢再快再慢.
         morphAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         
         layerV.addAnimation(morphAnimation, forKey: nil)
-        
     }
     
     @IBAction func startAction(sender: AnyObject) {
@@ -87,6 +94,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /// 对应的是startAction1里面执行动画
+        //背景而已
         let r = CGRectMake(20, 200, 140, 140)
         let backV = UIView(frame: r)
         self.view.addSubview(backV)
@@ -97,17 +106,17 @@ class ViewController: UIViewController {
         v.backgroundColor = UIColor.orangeColor()
         v.tag = 100
         v.layer.contents = image!.CGImage
-        
+        //v.layer.bounds
         layerV.path = UIBezierPath(ovalInRect: v.layer.bounds).CGPath
         layerV.position = CGPoint(x: 0, y: 0)
         v.layer.mask = layerV
-        
+        //添加分割线 方便。
         let lineV = UIView(frame: CGRectMake(90, 190, 1, 200))
         view.addSubview(lineV)
         lineV.backgroundColor = UIColor.redColor()
         
         
-        
+        /// 对应的是startAction里面执行动画
         view.layer.addSublayer(myLayer)
         myLayer.frame = rect
         myLayer.contents = image!.CGImage
